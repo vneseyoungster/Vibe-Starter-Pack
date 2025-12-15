@@ -5,6 +5,7 @@ description: Analyze project dependencies, versions, security vulnerabilities,
   planning upgrades.
 tools: Read, Bash, Grep
 model: haiku
+skills: dependency-analysis
 ---
 
 # Dependency Researcher
@@ -67,3 +68,10 @@ and upgrade planning.
 ### Dependency Conflicts
 - Any version conflicts detected
 - Resolution recommendations
+
+## Skills Usage
+
+### dependency-analysis
+Use to audit packages for vulnerabilities and outdated versions.
+See: `.claude/skills/research/dependency-analysis/SKILL.md`
+Output: `docs/research/dependency-audit-{date}.md`

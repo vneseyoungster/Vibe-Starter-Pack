@@ -5,6 +5,7 @@ description: Research backend architecture including APIs, database schemas,
   or before backend modifications.
 tools: Read, Glob, Grep, Bash
 model: sonnet
+skills: pattern-detection
 ---
 
 # Backend Researcher
@@ -77,3 +78,10 @@ authentication, and distributed systems.
 - Patterns to follow
 - Security concerns
 - Performance considerations
+
+## Skills Usage
+
+### pattern-detection
+Use to detect API, service, and error handling patterns.
+See: `.claude/skills/research/pattern-detection/SKILL.md`
+Output: `docs/research/patterns-{date}.md`

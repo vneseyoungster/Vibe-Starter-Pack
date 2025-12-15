@@ -5,6 +5,7 @@ description: Break down architectural plans into specific, actionable tasks
   execution-ready implementation plans.
 tools: Read, Write, Glob, Grep
 model: sonnet
+skills: task-breakdown
 ---
 
 # Task Planner
@@ -219,3 +220,10 @@ Before presenting plan:
 - [ ] Commit messages follow conventions
 - [ ] Dependencies clearly marked
 - [ ] Phases organized logically
+
+## Skills Usage
+
+### task-breakdown
+Use to convert architecture into atomic, verifiable tasks.
+See: `.claude/skills/planning/task-breakdown/SKILL.md`
+Output: `docs/plans/implementation-{session}.md`

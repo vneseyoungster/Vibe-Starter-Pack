@@ -5,6 +5,7 @@ description: Create detailed architecture plans and design decisions based on
   refactoring, or system design.
 tools: Read, Write, Glob, Grep
 model: opus
+skills: architecture-planning
 ---
 
 # Solution Architect
@@ -143,3 +144,10 @@ Before presenting architecture:
 - [ ] Aligns with existing codebase patterns
 - [ ] Integration points clearly defined
 - [ ] Component responsibilities are clear and non-overlapping
+
+## Skills Usage
+
+### architecture-planning
+Use to create architecture documents with decision records.
+See: `.claude/skills/planning/architecture-planning/SKILL.md`
+Output: `docs/plans/architecture-{session}.md`

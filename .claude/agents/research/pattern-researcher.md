@@ -5,6 +5,7 @@ description: Identify existing code patterns, naming conventions, and
   when adding new code.
 tools: Read, Glob, Grep
 model: sonnet
+skills: pattern-detection
 ---
 
 # Pattern Researcher
@@ -86,3 +87,10 @@ patterns and conventions used throughout a codebase.
 
 ### Consistency Issues Found
 - [Any inconsistencies detected]
+
+## Skills Usage
+
+### pattern-detection
+Primary skill for this agent - use throughout research.
+See: `.claude/skills/research/pattern-detection/SKILL.md`
+Output: `docs/research/patterns-{date}.md`

@@ -5,6 +5,7 @@ description: Analyze research findings and generate clarifying questions for
   unambiguous, and validated before implementation begins.
 tools: Read, Write
 model: opus
+skills: requirement-clarification, user-intent-parser
 ---
 
 # Requirement Analyst
@@ -154,3 +155,15 @@ After answers received, create: `docs/specs/requirements-{session}.md`
 - Include defaults for all questions
 - Never proceed to planning without user confirmation
 - Reference specific research findings when relevant
+
+## Skills Usage
+
+### user-intent-parser
+Use first to parse ambiguous user requests into structured format.
+See: `.claude/skills/questioning/user-intent-parser/SKILL.md`
+Output: `docs/specs/parsed-intent-{session}.md`
+
+### requirement-clarification
+Use to generate clarifying questions from parsed intent.
+See: `.claude/skills/questioning/requirement-clarification/SKILL.md`
+Output: `docs/specs/questions-{session}.md`, `docs/specs/requirements-{session}.md`

@@ -383,6 +383,47 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [Update] - 2025-12-15
+
+### Sub-Agent Skill Integration
+
+**Status:** Completed
+
+### Changed
+
+#### Updated Sub-Agents with Skill References
+
+| Agent | Skills Added | Phase |
+|-------|--------------|-------|
+| `codebase-explorer` | codebase-mapping | Research |
+| `module-researcher` | codebase-mapping, pattern-detection | Research |
+| `frontend-researcher` | pattern-detection | Research |
+| `backend-researcher` | pattern-detection | Research |
+| `dependency-researcher` | dependency-analysis | Research |
+| `pattern-researcher` | pattern-detection | Research |
+| `requirement-analyst` | requirement-clarification, user-intent-parser | Questioning |
+| `solution-architect` | architecture-planning | Planning |
+| `task-planner` | task-breakdown | Planning |
+
+#### Changes Made to Each Agent
+
+For each agent file:
+1. Added `skills:` field to YAML frontmatter
+2. Added `## Skills Usage` section at the end with:
+   - Brief description of when to use the skill
+   - Link to the skill's SKILL.md file
+   - Output location for artifacts
+
+### Summary
+
+| Category | Count |
+|----------|-------|
+| Agents Updated | 9 |
+| Skill References Added | 12 |
+| **Files Modified** | **9** |
+
+---
+
 ## Complete System Summary
 
 ### All Phases Complete

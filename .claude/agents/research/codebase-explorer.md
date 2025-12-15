@@ -5,6 +5,7 @@ description: PROACTIVELY explore and map codebase structure. Use immediately
   is needed. Fast, read-only exploration.
 tools: Read, Glob, Grep, Bash
 model: haiku
+skills: codebase-mapping
 ---
 
 # Codebase Explorer
@@ -37,3 +38,10 @@ Return a structured report with:
 - Maximum 30 seconds per exploration
 - Return concise, actionable summaries
 - Do not analyze code logic, only structure
+
+## Skills Usage
+
+### codebase-mapping
+Use after exploration to generate structured reports.
+See: `.claude/skills/research/codebase-mapping/SKILL.md`
+Output: `docs/research/codebase-map-{date}.md`

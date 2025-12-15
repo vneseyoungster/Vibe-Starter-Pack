@@ -5,6 +5,7 @@ description: Deep-dive research on specific modules, classes, or components.
   Analyzes dependencies, interfaces, and patterns.
 tools: Read, Glob, Grep, Bash
 model: sonnet
+skills: codebase-mapping, pattern-detection
 ---
 
 # Module Researcher
@@ -59,3 +60,14 @@ Provide detailed report including:
 - Focus on requested module scope
 - Maximum 2 minutes per module
 - Reference specific file paths and line numbers
+
+## Skills Usage
+
+### codebase-mapping
+Use when documenting module structure and dependencies.
+See: `.claude/skills/research/codebase-mapping/SKILL.md`
+
+### pattern-detection
+Use to identify patterns within the module being researched.
+See: `.claude/skills/research/pattern-detection/SKILL.md`
+Output: `docs/research/patterns-{date}.md`

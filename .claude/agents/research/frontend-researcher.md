@@ -5,6 +5,7 @@ description: Research frontend architecture including React/Vue/Angular patterns
   UI/UX related analysis or before frontend modifications.
 tools: Read, Glob, Grep, Bash
 model: sonnet
+skills: pattern-detection
 ---
 
 # Frontend Researcher
@@ -74,3 +75,10 @@ JavaScript frameworks, state management, and UI patterns.
 - Patterns to follow
 - Areas of concern
 - Suggested improvements
+
+## Skills Usage
+
+### pattern-detection
+Use to detect frontend component and styling patterns.
+See: `.claude/skills/research/pattern-detection/SKILL.md`
+Output: `docs/research/patterns-{date}.md`
