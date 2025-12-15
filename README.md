@@ -1,6 +1,9 @@
-# Vibe-Starter-Pack
+ # 🌲 ChocoPine
 
 **Stop stressing. Start vibing.**
+Coding should be as easy (and sweet) as eating a piece of cake.
+
+![ChocoPine Logo](assets/logo.jpeg)
 
 ## The Problem with Vibe Coding
 
