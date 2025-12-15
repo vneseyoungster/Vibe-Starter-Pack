@@ -1,20 +1,36 @@
-# 🎉 Vibe-Starter-Pack
+# Vibe-Starter-Pack
 
-**Stop stressing. Start vibing.** ✨
+**Stop stressing. Start vibing.**
 
-Building apps should feel like fun, not like pulling teeth. Whether you're a total beginner or just hate the boring parts of coding, this starter pack turns Claude Code into your chill coding buddy that actually *gets* what you want.
+## The Problem with Vibe Coding
 
-## 🤔 What's This All About?
+AI coding assistants are powerful, but they come with real challenges:
 
-You know that feeling when you have an awesome app idea but don't know where to start? Or when coding tutorials make your eyes glaze over? **Yeah, we fixed that.**
+### 1. Prompt Engineering is Hard
+The most time-consuming part of vibe coding isn't waiting for code—it's figuring out *how to ask*. One line of wrong instruction can send your entire feature in the wrong direction. You end up spending more time crafting the perfect prompt than actually building.
 
-Vibe-Starter-Pack uses a simple 5-step flow called **RQPIV**:
+### 2. Beginners Don't Know What's Happening
+When Claude Code starts working, it's a black box. What files is it looking at? What's the plan? What code is being added and why? Without visibility, you can't learn, and you can't catch mistakes before they multiply.
+
+### 3. Context Windows Fill Up Fast
+Here's what most people don't realize: Claude Code's quality **degrades significantly** when context fills to around 50%. With large codebases, your AI assistant gets dumber as the conversation goes on—right when you need it most.
+
+## Our Solution: RQPIV Workflow
+
+Vibe-Starter-Pack solves all three problems with a structured workflow:
 
 > **R**esearch → **Q**uestion → **P**lan → **I**mplement → **V**alidate
 
-Translation: Claude figures stuff out, asks you what you actually want, makes a plan, builds it, then double-checks everything works. You just... vibe. 🎧
+### Better Requirements Through Clarification
+Instead of you guessing the perfect prompt, **the system asks YOU clarifying questions**. It extracts exactly what you need through dialogue, so your requirements are complete before a single line of code is written.
 
-## 🚀 Getting Started (It's Easy, Promise!)
+### Full Transparency for Learning
+Every step is visible. The research phase shows you what Claude found in your codebase. The planning phase shows you exactly what will be built and where. No more black box—you understand what's happening and why.
+
+### Context Preserved Through Sub-Agents
+This is the game-changer: **different phases use separate context windows via specialized sub-agents**. Research doesn't pollute your implementation context. Your main conversation stays clean and focused. The AI stays smart throughout the entire feature build.
+
+## Getting Started
 
 Drop these files into your project folder:
 
@@ -24,76 +40,67 @@ cp -r docs /path/to/your/project/
 cp CLAUDE.md /path/to/your/project/
 ```
 
-That's it. You're ready to vibe.
+## How to Use It
 
-## 💫 How to Use It
-
-### The Easy Way (Just Type This!)
+### The Simple Way
 
 ```
-/rqpiv Add a login page with cool animations
+/rqpiv Add a login page with user authentication
 ```
 
-Boom. Claude handles everything. It'll ask you questions when it needs your input, show you the plan before building, and make sure everything works at the end.
+Claude handles the full workflow automatically—researching your codebase, asking you clarifying questions, showing you the plan, implementing, and validating.
 
-### Want More Control? Go Step-by-Step
+### Step-by-Step Control
 
 ```
-/rqpiv-start Add a shopping cart       # Tell Claude what you want
+/rqpiv-start Add a shopping cart       # Initialize the workflow
 /phase-question                         # Claude asks clarifying questions
-/phase-plan                             # See the game plan before building
-/phase-implement                        # Watch the magic happen
-/phase-validate                         # Make sure it's all good
+/phase-plan                             # Review the implementation plan
+/phase-implement                        # Watch code get written
+/phase-validate                         # Run tests and security checks
 ```
 
-## 🎯 What Actually Happens
+## What Actually Happens
 
-1. **You share your idea** → "I want users to be able to save their favorite items"
+| Phase | What Claude Does | What You Do |
+|-------|------------------|-------------|
+| **Research** | Explores your codebase structure, patterns, and conventions | Wait (sub-agents handle this in separate context) |
+| **Question** | Asks specific questions about your requirements | Answer to refine the feature spec |
+| **Plan** | Creates detailed architecture and implementation plan | Review and approve before coding starts |
+| **Implement** | Writes code following the approved plan exactly | Watch and intervene if needed |
+| **Validate** | Runs tests, security audit, code review | Confirm everything works |
 
-2. **Claude does the homework** → Looks at your project, figures out how things work
+## Why This Works
 
-3. **You chat it out** → Claude asks questions like "Should favorites sync across devices?"
+- **No more prompt guessing** — The questioning phase extracts what you actually need
+- **No more confusion** — Every phase produces visible artifacts in `docs/`
+- **No more context degradation** — Sub-agents keep your main context clean
+- **No more surprises** — You approve the plan before implementation begins
 
-4. **You approve the plan** → See exactly what's getting built before any code is written
+## Configuration
 
-5. **Code gets written** → Following YOUR approved plan
+Edit `CLAUDE.md` to tell Claude about your project:
+- Tech stack (language, framework, database)
+- Build commands
+- Code conventions
+- Directory structure
 
-6. **Quality check** → Tests, security review, the works
+The more context you provide upfront, the better the results.
 
-No surprises. No confusion. Just vibes. 😎
-
-## 💡 Pro Tips for Maximum Vibes
-
-- **Be specific!** "Add a dark mode toggle in the settings" > "make it look better"
-- **Answer the questions** - They help Claude build exactly what you want
-- **Check the plan** - 2 minutes of review saves hours of "wait that's not what I meant"
-- **Don't skip validation** - Future you will thank present you
-
-## 🛠️ Make It Yours
-
-Open `CLAUDE.md` and tell Claude about your project:
-- What tech you're using
-- How to run your app
-- Any special rules or preferences
-
-The more Claude knows, the better it vibes with your project.
-
-## 📋 Requirements
+## Requirements
 
 - Claude Code version 1.0.124+
 - Sub-agent support enabled
 
-## 📚 Want to Go Deeper?
+## Documentation
 
-- [Full Documentation](RQPIV-Workflow-PRD.md) - All the nerdy details
-- [CLAUDE.md](CLAUDE.md) - Quick reference guide
+- [Full Workflow Documentation](RQPIV-Workflow-PRD.md)
+- [Quick Reference](CLAUDE.md)
 
-## 📄 License
+## License
 
-MIT - Do whatever you want with it!
+MIT
 
 ---
 
-Built with 💜 for [Claude Code](https://claude.ai/claude-code)
-
-**Now go build something awesome!** 🚀
+Built for [Claude Code](https://claude.ai/claude-code)
