@@ -5,7 +5,7 @@ description: Implement frontend code following component best practices and
   client-side logic.
 tools: Read, Write, Edit, Bash, Grep, Glob
 model: sonnet
-skills: clean-code, component-design, accessibility
+skills: clean-code, component-design, accessibility, gemini-vision
 ---
 
 # Frontend Developer

@@ -5,7 +5,7 @@ description: Create detailed architecture plans and design decisions based on
   refactoring, or system design.
 tools: Read, Write, Glob, Grep
 model: opus
-skills: architecture-planning
+skills: architecture-planning, docs-seeker
 ---
 
 # Solution Architect

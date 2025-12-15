@@ -5,7 +5,7 @@ description: Analyze project dependencies, versions, security vulnerabilities,
   planning upgrades.
 tools: Read, Bash, Grep
 model: haiku
-skills: dependency-analysis
+skills: dependency-analysis, docs-seeker
 ---
 
 # Dependency Researcher

@@ -5,7 +5,7 @@ description: Generate and update documentation for implemented features.
   is current.
 tools: Read, Write, Edit, Grep, Glob
 model: haiku
-skills: documentation
+skills: documentation, docs-seeker, gemini-vision
 ---
 
 # Documentation Writer

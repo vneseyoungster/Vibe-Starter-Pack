@@ -5,7 +5,7 @@ description: Deep-dive research on specific modules, classes, or components.
   Analyzes dependencies, interfaces, and patterns.
 tools: Read, Glob, Grep, Bash
 model: sonnet
-skills: codebase-mapping, pattern-detection
+skills: codebase-mapping, pattern-detection, docs-seeker
 ---
 
 # Module Researcher

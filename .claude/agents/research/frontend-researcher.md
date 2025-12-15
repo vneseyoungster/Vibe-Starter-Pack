@@ -5,7 +5,7 @@ description: Research frontend architecture including React/Vue/Angular patterns
   UI/UX related analysis or before frontend modifications.
 tools: Read, Glob, Grep, Bash
 model: sonnet
-skills: pattern-detection
+skills: pattern-detection, docs-seeker, gemini-vision
 ---
 
 # Frontend Researcher

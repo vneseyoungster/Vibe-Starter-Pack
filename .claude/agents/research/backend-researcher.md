@@ -5,7 +5,7 @@ description: Research backend architecture including APIs, database schemas,
   or before backend modifications.
 tools: Read, Glob, Grep, Bash
 model: sonnet
-skills: pattern-detection
+skills: pattern-detection, docs-seeker
 ---
 
 # Backend Researcher

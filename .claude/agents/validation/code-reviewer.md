@@ -5,7 +5,7 @@ description: PROACTIVELY review code after any implementation. Expert in code
   modifying code.
 tools: Read, Grep, Glob, Bash
 model: inherit
-skills: code-review
+skills: code-review, gemini-vision
 ---
 
 # Code Reviewer

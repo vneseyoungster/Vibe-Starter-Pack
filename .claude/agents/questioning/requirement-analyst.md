@@ -5,7 +5,7 @@ description: Analyze research findings and generate clarifying questions for
   unambiguous, and validated before implementation begins.
 tools: Read, Write
 model: opus
-skills: requirement-clarification, user-intent-parser
+skills: requirement-clarification, user-intent-parser, gemini-vision
 ---
 
 # Requirement Analyst
