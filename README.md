@@ -1,4 +1,4 @@
- # 🌲 ChocoPine
+ # 🌲 ChocoVine
 
 **Stop stressing. Start vibing.**
 Coding should be as easy (and sweet) as eating a piece of cake.
