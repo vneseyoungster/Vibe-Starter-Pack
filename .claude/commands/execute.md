@@ -1,17 +1,17 @@
-# Execute Implementation Phase
+# Execute Implementation
 
 Execute implementation plan for: $ARGUMENTS
 
 ## Prerequisites Check
-- [ ] Planning phase completed
+- [ ] Research phase completed (`/research`)
 - [ ] Architecture approved
 - [ ] Implementation plan approved
-- [ ] Plan document in `docs/plans/`
+- [ ] Plan document in `docs/sessions/{session}/plans/`
 
 ## Execution Steps
 
 1. **Load Implementation Plan**
-   Read: `docs/plans/implementation-{session}.md`
+   Read: `docs/sessions/{session}/plans/implementation.md`
 
 2. **Switch to Auto-Accept Mode**
    Enter Shift+Tab to enable auto-accept
@@ -98,7 +98,7 @@ For each task in the implementation plan:
 
 ### 2. Check Patterns
 Before implementing, review:
-- `docs/research/patterns-*.md` for coding conventions
+- `docs/sessions/{session}/research/patterns.md` for coding conventions
 - Similar implementations in codebase
 - Skill references for best practices
 
@@ -227,3 +227,7 @@ After all tasks complete:
 
 4. **Await Confirmation**
    Do NOT auto-transition to validation
+
+## Next Phase
+
+After implementation complete: `/code-check`

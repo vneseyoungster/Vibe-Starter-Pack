@@ -1,9 +1,9 @@
-# Execute Validation Phase
+# Code Check & Validation
 
 Run validation for: $ARGUMENTS
 
 ## Prerequisites Check
-- [ ] Implementation phase completed
+- [ ] Implementation phase completed (`/execute`)
 - [ ] All tasks marked complete
 - [ ] No pending deviations
 
@@ -102,15 +102,15 @@ Invoke documentation-writer with:
 
 ## Outputs
 
-All validation reports stored in `docs/reviews/`:
+All validation reports stored in `docs/sessions/{session}/reviews/`:
 
 | Report | File |
 |--------|------|
-| Code Review | `code-review-{session}.md` |
-| Test Report | `test-report-{session}.md` |
-| Security Audit | `security-audit-{session}.md` |
-| Documentation | `documentation-{session}.md` |
-| Final Report | `final-validation-{session}.md` |
+| Code Review | `code-review.md` |
+| Test Report | `test-report.md` |
+| Security Audit | `security-audit.md` |
+| Documentation | `documentation.md` |
+| Final Report | `final-validation.md` |
 
 ## Final Validation Report Template
 
@@ -133,26 +133,26 @@ All validation reports stored in `docs/reviews/`:
 - Critical: {count}
 - Warnings: {count}
 - Suggestions: {count}
-- [Full Report](code-review-{session}.md)
+- [Full Report](code-review.md)
 
 ## Test Results
 - Tests Run: {count}
 - Passed: {count}
 - Failed: {count}
 - Coverage: {percent}%
-- [Full Report](test-report-{session}.md)
+- [Full Report](test-report.md)
 
 ## Security Audit
 - Critical: {count}
 - High: {count}
 - Medium: {count}
 - Low: {count}
-- [Full Report](security-audit-{session}.md)
+- [Full Report](security-audit.md)
 
 ## Documentation
 - Files Updated: {count}
 - Gaps Identified: {count}
-- [Full Report](documentation-{session}.md)
+- [Full Report](documentation.md)
 
 ## Recommendation
 
@@ -175,3 +175,10 @@ All validation reports stored in `docs/reviews/`:
 | Documentation | Docs updated | Update documentation |
 
 ## Gate: Cannot merge without passing validation
+
+## Phase Indicators
+
+- 🔍 Research & Planning (complete)
+- 🔨 Implementation (complete)
+- ✅ **Validation (current)**
+- ✓ Complete (next)

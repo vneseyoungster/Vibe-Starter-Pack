@@ -8,7 +8,7 @@ workflow system for all development tasks.
 ### Quick Start
 
 ```
-/rqpiv [feature description]
+/start [feature description]
 ```
 
 This command orchestrates the full workflow automatically.
@@ -16,11 +16,9 @@ This command orchestrates the full workflow automatically.
 ### Manual Phase Execution
 
 ```
-/rqpiv-start [task]      # Initialize workflow session
-/phase-question          # Questioning phase
-/phase-plan              # Planning phase
-/phase-implement         # Implementation phase
-/phase-validate          # Validation phase
+/research [task]         # Research, question, and plan
+/execute [task]          # Implementation phase
+/code-check [task]       # Validation phase
 ```
 
 ## Sub-Agent Reference
@@ -87,19 +85,14 @@ This command orchestrates the full workflow automatically.
 
 ## Quality Gates
 
-### Research → Question
+### Research → Execute
 - All research artifacts created
-- No blocking gaps identified
-
-### Question → Plan
 - All blocking questions answered
 - Requirements document approved
-
-### Plan → Implement
 - Architecture approved by user
 - Implementation plan approved by user
 
-### Implement → Validate
+### Execute → Validate
 - All tasks completed
 - Deviations documented
 
@@ -111,14 +104,12 @@ This command orchestrates the full workflow automatically.
 
 ## Slash Commands
 
-| Command | Phase | Purpose |
-|---------|-------|---------|
-| `/rqpiv` | All | Execute full RQPIV workflow |
-| `/rqpiv-start` | All | Initialize workflow session |
-| `/phase-question` | Q | Execute questioning phase |
-| `/phase-plan` | P | Execute planning phase |
-| `/phase-implement` | I | Execute implementation phase |
-| `/phase-validate` | V | Execute validation phase |
+| Command | Purpose |
+|---------|---------|
+| `/start` | Execute full workflow (research → execute → validate) |
+| `/research` | Research codebase, ask questions, create approved plan |
+| `/execute` | Execute implementation from approved plan |
+| `/code-check` | Run code review, tests, security audit |
 
 ## Best Practices
 
