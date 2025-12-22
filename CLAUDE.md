@@ -23,6 +23,8 @@ workflow system for all development tasks.
 | `/research` | `.claude/commands/research.md` | Research, question, and plan phases |
 | `/execute` | `.claude/commands/execute.md` | Implementation phase |
 | `/code-check` | `.claude/commands/code-check.md` | Validation phase |
+| `/quick-fix` | `.claude/commands/quick-fix.md` | Fast fixes (bug fixes, typos, config changes) |
+| `/project-scan` | `.claude/commands/project-scan.md` | Scan codebase and generate documentation |
 
 ### Usage
 
@@ -31,6 +33,8 @@ workflow system for all development tasks.
 /research [task]                  # Research + Question + Plan
 /execute [task]                   # Implementation only
 /code-check [task]                # Validation only
+/quick-fix [problem]              # Fast fixes for known problems
+/project-scan [target]            # Scan codebase, generate documentation
 ```
 
 ## Workflow Enforcement Rules

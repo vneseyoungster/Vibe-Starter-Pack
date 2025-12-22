@@ -59,6 +59,18 @@ For small, known problems (bug fixes, typos, config changes):
 
 This skips planning entirely—main agent gathers minimal context and implements the fix directly.
 
+### Project Documentation
+
+For scanning a codebase and generating comprehensive documentation:
+
+```
+/project-scan                          # Scan entire codebase
+/project-scan ./src                    # Scan specific directory
+/project-scan Focus on API docs        # Scan with specific focus
+```
+
+Generates layered documentation (architecture, walkthroughs, API reference, setup guides) to help developers onboard quickly.
+
 ## What Actually Happens
 
 | Command | Phase | What Claude Does | What You Do |
@@ -68,6 +80,8 @@ This skips planning entirely—main agent gathers minimal context and implements
 | `/research` | **Plan** | Creates architecture and implementation plan | Review and approve before coding |
 | `/execute` | **Implement** | Writes code following the approved plan | Watch and intervene if needed |
 | `/code-check` | **Validate** | Runs code review, tests, security audit | Confirm everything works |
+| `/project-scan` | **Understand** | Analyzes git history, structure, patterns, dependencies | Wait (comprehensive analysis) |
+| `/project-scan` | **Document** | Generates README, architecture, walkthroughs, API docs | Review generated documentation |
 
 ## Why This Works
 
@@ -85,6 +99,7 @@ This skips planning entirely—main agent gathers minimal context and implements
 | `/execute [task]` | Implementation | After `/research` to implement the approved plan |
 | `/code-check [task]` | Validation | After `/execute` to run code review, tests, and security audit |
 | `/quick-fix [problem]` | Fast fixes | Bug fixes, typos, config changes where solution is known |
+| `/project-scan [target]` | Project documentation | Scan codebase and generate layered documentation for onboarding |
 
 ## Configuration
 
